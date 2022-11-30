@@ -1,0 +1,153 @@
+// main: ../estilos.less
+
+/* md */
+@media (min-width: 992px) {
+  .card_body{
+    min-height: 210px;
+  }
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Small Devices, Tablets */
+@media (max-width : 767px) {
+  
+  
+.seccion {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.seccion-encabezado-pg{
+	.seccion_body{
+	padding: auto;
+	}
+}
+.box {
+	padding: 0;
+	margin-bottom: 1em;
+}
+.box-producto-home {
+	height: auto;
+	min-height: 0;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.box-producto-home .box_titulo {
+	font-size: 22px;
+	line-height: 1.2;
+}
+.box-producto-home>.box_footer {
+	position: absolute;
+	bottom: 30px;
+	left: 40px;
+}
+/* Hero*/
+.hero {
+	position: absolute;
+	bottom: 10%;
+	max-width: 100%;
+	padding:20px;
+}
+.titulo_hero {
+	font-size: 24px;
+}
+
+.subtitulo_hero {
+	font-size: 18px;
+}
+
+
+/* */
+
+.destaque {
+	font-size: 22px;
+	line-height: 1
+}
+
+
+
+.divisor {
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+.btn-destacado {
+	border-color: @color_destacado;
+	background-color: @color_destacado;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	&:hover {
+	border-color: darken(@color_destacado,10%);
+	background-color: darken(@color_destacado,10%);
+		color:#fff;
+	}
+}
+.destacado{
+	background-color: #fff;
+	padding:20px;
+	margin-bottom:20px;
+	text-align:center;
+}
+.destacado .box_titulo {
+	font-size: 28px;
+	line-height: 1;
+	font-weight: 400;
+	margin: 0.5em 0 0.1em;
+}
+
+.destacado .box_subtitulo {
+	font-size: 18px;
+font-weight: 400;
+}
+
+.destacado .box_footer {
+	margin: 10px 0;
+}
+
+.destacado .box_footer .btn {
+	padding: 20px 30px;
+	margin-bottom:20px;
+	width:100%;
+}
+
+.destacado .box_footer .btn:hover {
+	border-color: @color_destacado;
+}
+
+.destacado .box_footer .btn-destacado {
+	margin-right: 10px;
+}
+
+
+.destacado .box_footer .btn-destacado .lnr {
+	font-size: 18px;
+	vertical-align: center
+}
+
+.center-cropped {
+	display:none;
+}
+
+.x3 {
+	font-size: 28px;
+	font-weight: 100;
+	margin-bottom:0.5em;
+	text-align:center;
+}
+.panel-login{
+	margin-top:auto;
+}
+/* FOOTER */
+.footer-contacto {
+	padding: 30px 0;
+	text-align:center;
+}
+footer {
+	padding: 30px 0;
+	text-align:center;
+}
+}

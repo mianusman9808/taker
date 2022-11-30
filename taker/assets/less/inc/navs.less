@@ -1,0 +1,71 @@
+// main: ../estilos.less
+/* NAVBAR
+-------------------------------------------------- */
+/*
+.navbar-wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 20;
+	height: 600px;
+	min-height: 600px;
+	background-size: cover;
+	background-position: 50%;
+	position: relative;
+	z-index: 100;
+}
+.navbar-wrapper>.container {
+	padding-right: 0;
+	padding-left: 0;
+}
+.navbar-wrapper .navbar {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+	width: auto;
+}
+*/
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+/* NAVS */
+#nav-taker {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	background-color: transparent;
+	z-index: 101;
+	border: 0 none;
+	padding: 30px 0;
+}
+
+#nav-scroll {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	display: none;
+	background-color: @color_destacado;
+	z-index: 101;
+	border-color:@color_destacado;
+	padding: 20px 0;
+}
+
+.navbar-ppal {
+	text-transform: uppercase;
+	font-size: 15px;
+}
+#nav-taker .nav > li > a,
+#nav-scroll .nav > li > a{
+	color:#fff;
+	letter-spacing: 1px;
+	font-weight: @text-bold;
+	&:hover{
+		color:@color_secundario;
+	}
+}

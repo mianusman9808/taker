@@ -1,0 +1,610 @@
+/* NAVBAR
+-------------------------------------------------- */
+/*
+.navbar-wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 20;
+	height: 600px;
+	min-height: 600px;
+	background-size: cover;
+	background-position: 50%;
+	position: relative;
+	z-index: 100;
+}
+.navbar-wrapper>.container {
+	padding-right: 0;
+	padding-left: 0;
+}
+.navbar-wrapper .navbar {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+	width: auto;
+}
+*/
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 0 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+/* NAVS */
+#nav-taker {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background-color: transparent;
+  z-index: 101;
+  border: 0 none;
+  padding: 30px 0;
+}
+#nav-scroll {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: none;
+  background-color: #3f51b5;
+  z-index: 101;
+  border-color: #3f51b5;
+  padding: 20px 0;
+}
+.navbar-ppal {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+#nav-taker .nav > li > a,
+#nav-scroll .nav > li > a {
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+#nav-taker .nav > li > a:hover,
+#nav-scroll .nav > li > a:hover {
+  color: #26c6da;
+}
+/* LAYOUT */
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 4px;
+  padding-left: 4px;
+}
+.pagina_header {
+  margin-bottom: 1em;
+}
+.pagina_titulo {
+  color: #3f51b5;
+  margin-bottom: 0.25em;
+  font-weight: 700;
+}
+.pagina_subtitulo {
+  margin: 0;
+}
+.pagina_descripcion {
+  margin-bottom: 2em;
+  max-width: 75%;
+}
+body {
+  margin: 0px 0px;
+  background: #eee;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+  font-weight: 400;
+}
+.header {
+  position: absolute;
+  top: 50%;
+  text-align: left;
+  width: 100%;
+  color: #fff;
+  font-size: 36px;
+  -ms-transform: translate(0, -50%);
+  /* IE 9 */
+  -webkit-transform: translate(0, -50%);
+  /* Safari */
+  transform: translate(0, -50%);
+}
+.bg1 {
+  /* Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/0km.jpg");
+  /* Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/0km.jpg");
+  /* Firefox 3.6 to 15 */
+  background: -moz-linear-gradient(right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/0km.jpg");
+  /* Standard syntax */
+  background: linear-gradient(to right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/0km.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+.bg2 {
+  /* Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/accidentes-turismo-aventura.jpg");
+  /* Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/accidentes-turismo-aventura.jpg");
+  /* Firefox 3.6 to 15 */
+  background: -moz-linear-gradient(right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/accidentes-turismo-aventura.jpg");
+  /* Standard syntax */
+  background: linear-gradient(to right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/accidentes-turismo-aventura.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+.bg3 {
+  /* Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/accidentes.jpg");
+  /* Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/accidentes.jpg");
+  /* Firefox 3.6 to 15 */
+  background: -moz-linear-gradient(right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/accidentes.jpg");
+  /* Standard syntax */
+  background: linear-gradient(to right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/accidentes.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+/* SECCIONES */
+.seccion {
+  /*padding-top: 160px;*/
+  /*padding-bottom: 100px;*/
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #fff;
+}
+.seccion-servicios {
+  background-color: #ddd;
+}
+.seccion-productos {
+  background-color: #eee;
+}
+.seccion-encabezado-taker-rci {
+  /* Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/automotores.jpg");
+  /* Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/automotores.jpg");
+  /* Firefox 3.6 to 15 */
+  background: -moz-linear-gradient(right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/automotores.jpg");
+  /* Standard syntax */
+  background: linear-gradient(to right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/automotores.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+/*
+.seccion-encabezado-taker-accidentes-laborales {
+  
+  background: -webkit-linear-gradient(left, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/accidentes-laboral.jpg");
+  
+  background: -o-linear-gradient(right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/accidentes-laboral.jpg");
+  
+  background: -moz-linear-gradient(right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/accidentes-laboral.jpg");
+  
+  background: linear-gradient(to right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/accidentes-laboral.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+*/
+.seccion-encabezado-taker-turismo-aventura {
+  /* Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/accidentes-turismo-aventura.jpg");
+  /* Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/accidentes-turismo-aventura.jpg");
+  /* Firefox 3.6 to 15 */
+  background: -moz-linear-gradient(right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/accidentes-turismo-aventura.jpg");
+  /* Standard syntax */
+  background: linear-gradient(to right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/accidentes-turismo-aventura.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+.seccion-encabezado-transporte-de-cargas {
+  /* Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/transporte.jpg");
+  /* Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/transporte.jpg");
+  /* Firefox 3.6 to 15 */
+  background: -moz-linear-gradient(right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/transporte.jpg");
+  /* Standard syntax */
+  background: linear-gradient(to right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/transporte.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+.seccion-encabezado-1 {
+  /* Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/0km.jpg");
+  /* Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/0km.jpg");
+  /* Firefox 3.6 to 15 */
+  background: -moz-linear-gradient(right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/0km.jpg");
+  /* Standard syntax */
+  background: linear-gradient(to right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/0km.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+.seccion-encabezado-1 {
+  /* Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(left, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/0km.jpg");
+  /* Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/0km.jpg");
+  /* Firefox 3.6 to 15 */
+  background: -moz-linear-gradient(right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/0km.jpg");
+  /* Standard syntax */
+  background: linear-gradient(to right, rgba(50, 64, 143, 0.8), rgba(63, 81, 181, 0.8)), url("../imgs/0km.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+h1.seccion_titulo {
+  font-size: 64px;
+  font-weight: 300;
+}
+h2.seccion_titulo {
+  font-size: 40px;
+  font-weight: 300;
+}
+.seccion-encabezado-pg .seccion_body {
+  /*padding: 240px 0 60px;*/
+  /*padding: 200px 0 60px;*/
+  padding: 150px 0 60px;
+}
+.seccion-encabezado-pg .seccion_body .seccion_titulo,
+.seccion-encabezado-pg .seccion_body .lead {
+  color: #fff;
+}
+.titulo_destacado {
+  color: #3f51b5;
+}
+.lead span {
+  vertical-align: middle;
+  margin-right: 0.25em;
+  color: #3f51b5;
+}
+.box {
+  background-color: #ddd;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+.box:hover {
+  background-color: #ccc;
+}
+.box-producto-home {
+  height: 320px;
+  min-height: 320px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.box-producto-home .box_titulo {
+  font-size: 42px;
+  line-height: 1.2;
+}
+.box-producto-home > .box_footer {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+}
+.box-producto-home .box_link {
+  display: none;
+}
+.box-producto-home:hover .box_link {
+  display: block;
+}
+.card {
+  background-color: #252f69;
+  text-align: center;
+  margin-bottom: 1em;
+  color: #fff;
+}
+.card .btn-destacado {
+  background: #171e44;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+.card:hover {
+  cursor: pointer;
+  background-color: #1e9faf;
+}
+.card:hover .card_img {
+  opacity: 0.5;
+}
+.card:hover .btn-destacado {
+  background: #26c6da;
+}
+.card_img {
+  height: 260px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -webkit-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+}
+.card_body {
+  padding: 1em;
+  height: 210px;
+  height: auto;
+}
+.card_titulo {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.card_footer {
+  padding: 0.5em 0 1em;
+}
+#producto_id0 {
+  background-image: url(../imgs/automotores.jpg);
+}
+/*
+.btn,
+.form-control {
+  border-radius: 0;
+}
+*/
+#producto_id1 {
+  background-image: url(../imgs/0km.jpg);
+}
+#producto_id2 {
+  background-image: url(../imgs/accidentes.jpg);
+}
+#producto_id3 {
+  background-image: url(../imgs/accidentes-turismo-aventura.jpg);
+}
+#producto_id4 {
+  background-image: url(../imgs/compulsa.jpg);
+}
+#producto_id5 {
+  background-image: url(../imgs/transporte.jpg);
+}
+/* Hero*/
+/*
+.hero {
+	position: absolute;
+	bottom: 25%;
+	max-width: 65%
+}
+
+.titulo_hero {
+	font-size: 52px;
+	color: #fff;
+}
+
+.subtitulo_hero {
+	font-size: 32px;
+	color: #fff;
+	font-weight: 300
+}
+
+*/
+.destaque {
+  font-size: 22px;
+  line-height: 1;
+}
+.destaque .lnr {
+  color: #3f51b5;
+}
+.divisor {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  border-color: #ddd;
+}
+.btn-destacado {
+  border-color: #26c6da;
+  background-color: #26c6da;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.btn-destacado:hover {
+  border-color: #22b3c5;
+  background-color: #22b3c5;
+  color: #fff;
+}
+.destacado {
+  background-color: #fff;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+.destacado .box_titulo {
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 100;
+  margin: 0.5em 0 0.1em;
+  color: #3f51b5;
+}
+.destacado .box_subtitulo {
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 100;
+  margin: 0 0 0.5em;
+}
+.destacado .box_footer {
+  margin: 40px 0;
+}
+.destacado .box_footer .btn {
+  padding: 20px 30px;
+}
+.destacado .box_footer .btn:hover {
+  border-color: #3f51b5;
+}
+.destacado .box_footer .btn-destacado {
+  margin-right: 10px;
+}
+.destacado .box_footer .btn-destacado .lnr {
+  font-size: 18px;
+  vertical-align: center;
+}
+.center-cropped {
+  object-fit: none;
+  /* Do not scale the image */
+  object-position: center;
+  /* Center the image within the element */
+  height: 400px;
+  width: 600px;
+}
+.x3 {
+  font-size: 52px;
+  font-weight: 100;
+  margin-bottom: 0.5em;
+}
+.panel-login {
+  /*margin-top: -200px;*/
+}
+.panel-login {
+  border: 0 none;
+  text-align: center;
+}
+.panel-login .panel-heading {
+  background-color: #3f51b5;
+  border: 0 none;
+}
+.panel-login .panel-heading .panel-title {
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 1em 0;
+}
+/* FOOTER */
+.footer-contacto {
+  padding: 100px 0;
+  background-color: #e4e4e4;
+}
+/*
+footer {
+  padding: 60px 0;
+}
+*/
+/* md */
+@media (min-width: 992px) {
+  .card_body {
+    min-height: 210px;
+  }
+}
+/*==========  Mobile First Method  ==========*/
+/* Small Devices, Tablets */
+@media (max-width: 767px) {
+  .seccion {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .seccion-encabezado-pg .seccion_body {
+    padding: auto;
+  }
+  .box {
+    padding: 0;
+    margin-bottom: 1em;
+  }
+  .box-producto-home {
+    height: auto;
+    min-height: 0;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .box-producto-home .box_titulo {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+  .box-producto-home > .box_footer {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+  }
+  /* Hero*/
+  .hero {
+    position: absolute;
+    bottom: 10%;
+    max-width: 100%;
+    padding: 20px;
+  }
+  .titulo_hero {
+    font-size: 24px;
+  }
+  .subtitulo_hero {
+    font-size: 18px;
+  }
+  /* */
+  .destaque {
+    font-size: 22px;
+    line-height: 1;
+  }
+  .divisor {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .btn-destacado {
+    border-color: #3f51b5;
+    background-color: #3f51b5;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .btn-destacado:hover {
+    border-color: #32408f;
+    background-color: #32408f;
+    color: #fff;
+  }
+  .destacado {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .destacado .box_titulo {
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 400;
+    margin: 0.5em 0 0.1em;
+  }
+  .destacado .box_subtitulo {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .destacado .box_footer {
+    margin: 10px 0;
+  }
+  .destacado .box_footer .btn {
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .destacado .box_footer .btn:hover {
+    border-color: #3f51b5;
+  }
+  .destacado .box_footer .btn-destacado {
+    margin-right: 10px;
+  }
+  .destacado .box_footer .btn-destacado .lnr {
+    font-size: 18px;
+    vertical-align: center;
+  }
+  .center-cropped {
+    display: none;
+  }
+  .x3 {
+    font-size: 28px;
+    font-weight: 100;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+  .panel-login {
+    margin-top: auto;
+  }
+  /* FOOTER */
+  .footer-contacto {
+    padding: 30px 0;
+    text-align: center;
+  }
+  footer {
+    padding: 30px 0;
+    text-align: center;
+  }
+}

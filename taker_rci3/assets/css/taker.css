@@ -1,0 +1,48 @@
+/*
+GENERALES
+*/
+body{
+	background:#FFFFFF url(img/fondo_taker.jpg) repeat-x;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+/*FORMULARIOS*/
+p.boton{
+	text-align: center;
+}
+
+/*
+HEADER
+*/
+div.header {
+	padding:0px;
+	margin:0px; 
+	height:52px;
+
+}
+div#rol{
+	text-align: right;
+	font-weight: bold;
+}
+/*
+label{
+	text-align: right;
+	display: block;
+}
+*/
+/*
+FOOTER
+*/
+div.datos_footer{
+	text-align:right;
+	margin-top:40px;
+	border-top:1px solid #cccccc;
+	padding-top: 20px;
+}
+div.footer{
+	
+	border-top:1px solid #cccccc;
+	margin-top:50px;
+}

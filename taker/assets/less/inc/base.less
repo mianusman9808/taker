@@ -1,0 +1,349 @@
+// main: ../estilos.less
+body {
+	margin: 0px 0px;
+	background: #eee;
+	font-family: @fontfamily;
+	font-size: 16px;
+	line-height: 1.5;
+	color: @color;
+	font-weight:@text-normal;
+}
+
+
+.header {
+	position: absolute;
+	top: 50%;
+	text-align: left;
+	width: 100%;
+	color: #fff;
+	font-size: 36px;
+	-ms-transform: translate(0, -50%);
+	/* IE 9 */
+	-webkit-transform: translate(0, -50%);
+	/* Safari */
+	transform: translate(0, -50%);
+}
+
+.bg1 {
+	.gradiente("../imgs/0km.jpg");
+}
+
+.bg2 {
+	.gradiente("../imgs/accidentes-turismo-aventura.jpg");
+}
+
+.bg3 {
+	.gradiente("../imgs/accidentes.jpg");
+}
+
+
+/* SECCIONES */
+
+.seccion {
+	/*padding-top: 160px;*/
+  /*padding-bottom: 100px;*/
+
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #fff;
+}
+
+.seccion-servicios {
+	background-color: #ddd;
+}
+
+.seccion-productos {
+	background-color: #eee;
+}
+
+.seccion-encabezado-taker-rci {
+	.gradiente("../imgs/automotores.jpg");
+}
+
+.seccion-encabezado-taker-accidentes-laborales {
+	.gradiente("../imgs/accidentes-laboral.jpg");
+}
+
+.seccion-encabezado-taker-turismo-aventura {
+	.gradiente("../imgs/accidentes-turismo-aventura.jpg");
+}
+
+.seccion-encabezado-transporte-de-cargas {
+	.gradiente("../imgs/transporte.jpg");
+}
+
+.seccion-encabezado-1 {
+	.gradiente("../imgs/0km.jpg");
+}
+
+.seccion-encabezado-1 {
+	.gradiente("../imgs/0km.jpg");
+}
+h1.seccion_titulo{
+	font-size: 64px;
+	font-weight: 300;
+}
+h2.seccion_titulo{
+  font-size: 40px;
+  font-weight: 300;
+}
+.seccion-encabezado-pg {
+	.seccion_body {
+		/*padding: 240px 0 60px;*/
+		/*padding: 200px 0 60px;*/
+		padding: 150px 0 60px;
+		.seccion_titulo,
+		.lead {
+			color: #fff;
+		}
+	}
+}
+.titulo_destacado{
+	color: @color_destacado;
+}
+.lead span{
+	vertical-align: middle;
+	margin-right: 0.25em;
+	color: @color_destacado;
+}
+.box {
+	background-color: #ddd;
+	padding: 40px;
+	margin-bottom: 30px;
+}
+.box:hover {
+	background-color: #ccc;
+}
+.box-producto {}
+.box-producto-home {
+	height: 320px;
+	min-height: 320px;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.box-producto-home .box_titulo {
+	font-size: 42px;
+	line-height: 1.2;
+}
+.box-producto-home>.box_footer {
+	position: absolute;
+	bottom: 30px;
+	left: 40px;
+}
+.box-producto-home .box_link {
+	display: none
+}
+.box-producto-home:hover .box_link {
+	display: block
+}
+.card{
+	background-color: darken(@color_destacado,20%);
+	text-align: center;
+	margin-bottom: 1em;
+	color:#fff;
+	.btn-destacado{
+		background: darken(@color_destacado,30%);
+width:90%;
+margin:0 auto;
+padding:1em 0;
+	}
+	&:hover{
+		cursor: pointer;
+		background-color: darken(@color_secundario,10%);
+		.card_img{
+			opacity: 0.5;
+		}
+		.btn-destacado{
+			background: @color_secundario;
+		}
+	}
+}
+.card_img{
+	height: 260px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 1;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+.card_body{
+	padding: 1em;
+	height: 210px;
+	height: auto;
+	//min-height: 210px;
+}
+.card_titulo{
+	text-transform: uppercase;
+	font-weight: @text-bold;
+}
+.card_footer{
+	padding: 0.5em 0 1em;
+}
+#producto_id0 {
+	background-image: url(../imgs/automotores.jpg);
+}
+.btn,
+.form-control{
+	border-radius: 0;
+}
+#producto_id1 {
+	background-image: url(../imgs/0km.jpg);
+}
+
+#producto_id2 {
+	background-image: url(../imgs/accidentes.jpg);
+}
+
+#producto_id3 {
+	background-image: url(../imgs/accidentes-turismo-aventura.jpg);
+}
+
+#producto_id4 {
+	background-image: url(../imgs/compulsa.jpg);
+}
+
+#producto_id5 {
+	background-image: url(../imgs/transporte.jpg);
+}
+
+
+/* Hero*/
+/*
+.hero {
+	position: absolute;
+	bottom: 25%;
+	max-width: 65%
+}
+
+.titulo_hero {
+	font-size: 52px;
+	color: #fff;
+}
+
+.subtitulo_hero {
+	font-size: 32px;
+	color: #fff;
+	font-weight: 300
+}
+
+*/
+
+
+.destaque {
+	font-size: 22px;
+	line-height: 1
+}
+
+.destaque .lnr {
+	color: @color_destacado;
+}
+
+.divisor {
+	margin-top: 80px;
+	margin-bottom: 80px;
+	border-color: #ddd;
+}
+
+.btn-destacado {
+	border-color: @color_secundario;
+	background-color: @color_secundario;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	&:hover {
+		border-color: darken(@color_secundario, 5%);
+		background-color: darken(@color_secundario, 5%);
+		color: #fff;
+	}
+}
+
+.destacado {
+	background-color: #fff;
+	padding: 40px;
+	margin-bottom: 40px;
+}
+
+.destacado .box_titulo {
+	font-size: 64px;
+	line-height: 1;
+	font-weight: 100;
+	margin: 0.5em 0 0.1em;
+	color: @color_destacado;
+}
+
+.destacado .box_subtitulo {
+	font-size: 28px;
+	line-height: 1;
+	font-weight: 100;
+	margin: 0 0 0.5em;
+}
+
+.destacado .box_footer {
+	margin: 40px 0;
+}
+
+.destacado .box_footer .btn {
+	padding: 20px 30px;
+}
+
+.destacado .box_footer .btn:hover {
+	border-color: @color_destacado;
+}
+
+.destacado .box_footer .btn-destacado {
+	margin-right: 10px;
+}
+
+.destacado .box_footer .btn-destacado .lnr {
+	font-size: 18px;
+	vertical-align: center
+}
+
+.center-cropped {
+	object-fit: none;
+	/* Do not scale the image */
+	object-position: center;
+	/* Center the image within the element */
+	height: 400px;
+	width: 600px;
+}
+
+.x3 {
+	font-size: 52px;
+	font-weight: 100;
+	margin-bottom: 0.5em;
+}
+
+.panel-login {
+	/*margin-top: -200px;*/
+}
+
+.panel-login{
+	border: 0 none;
+	text-align: center;
+	.panel-heading{
+		background-color: @color_destacado;
+		border:0 none;
+		.panel-title{
+			font-weight: @text-bold;
+			color:#fff;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			padding: 1em 0;
+		}
+}
+}
+/* FOOTER */
+
+.footer-contacto {
+	padding: 100px 0;
+	background-color: #e4e4e4;
+}
+
+footer {
+	padding: 60px 0;
+}

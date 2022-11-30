@@ -1,0 +1,29 @@
+RewriteEngine on
+
+#Si es subdominio redirecciona
+#RewriteCond %{HTTP_HOST} ^rci.taker.com.ar$ [OR]
+#RewriteCond %{HTTP_HOST} ^www.rci.taker.com.ar$
+#RewriteRule ^(.*)$ https://www.taker.com.ar/taker_rci3/$1 [R,L]
+
+#Si es http redirecciona
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+
+#DESARROLLO
+#RewriteRule ^(.*)$ /paguiar/taker_rci3/index.php/$1 [L]
+
+
+#PRODUCCION
+#RewriteRule ^(.*)$ /taker_rci3/index.php/$1 [L]
+
+#php_value upload_max_filesize 50M
+#php_value post_max_size 50M
+
+RewriteCond $1 !^(index\.php|resources|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
+AddDefaultCharset utf-8

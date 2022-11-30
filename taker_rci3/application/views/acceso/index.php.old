@@ -1,0 +1,53 @@
+<?php $pageTitle = 'RCI'; ?>
+<?php include_once('../taker/partials/header.php'); ?>
+
+<section>
+    <div class="section-image">
+        <div class="image" style="background-image: url(<?php echo $taker_url;?>taker/resources/img/automotores.jpg);">
+
+        </div>
+    </div>
+    <div class="section-content">
+        <div class="section-text">
+            <h2>RCI</h2>
+            <?php if (validation_errors()):?>
+                <div class="alert alert-danger">
+                    <?php echo validation_errors(); ?>
+                </div>
+            <?php else: ?>
+            <p>Esta herramienta ha sido desarrollada para obtener coberturas de Responsabilidad Civil Automotores para todos aquellos vehículos extranjeros que ingresen a República Argentina, que tengan la necesidad de cumplir con la obligatoriedad del seguro para pasar por aduana en frontera.</p>
+            <p>Si Usted es Productor de Seguros, Corredor de Seguros o Broker de Seguros, podrá obtener una clave y contraseña para acceder a la cobertura de manera instantánea, on-line, las 24 hs. de los 365 días del año.</p>
+            <?php endif; ?>
+        </div>
+        <div class="section-extra">
+            <div id="user-login">
+        <form action="<?php echo base_url();?>acceso/index" method="post">
+           <div class="login-form">
+
+                <div class="login-row">
+
+                    <div class="login-col">
+                        <label>Usuario</label>
+                        <input type="text" name="correo" maxlength="50" size="22" class="usuario" value="<?php echo set_value('correo'); ?>" />
+                    </div>
+
+                </div>
+                <div class="login-row">
+                    <div class="login-col last">
+                        <label>Contraseña</label>
+                        <input type="password" name="password" maxlength="50" size="22" class="clave"/>
+                    </div>
+                </div>
+            </div>
+            <div class="login-captcha">
+            </div>
+            <div class="login-submit">
+                <input type="submit" class="button" value="Ingresar">
+            </div>
+        </form>
+    </div>
+        </div>
+    </div>
+</section>
+
+<?php include_once('../taker/partials/footer.php'); ?>
